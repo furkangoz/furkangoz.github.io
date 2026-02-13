@@ -147,6 +147,22 @@ body {
     display: none;
 }
 
+.nav-link-lang {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    font-weight: 500;
+}
+
+.nav-link-lang:hover {
+    background: var(--color-bg-alt);
+    border-color: var(--color-accent);
+}
+
+.nav-link-lang::after {
+    display: none;
+}
+
 .mobile-toggle {
     display: none;
     flex-direction: column;
@@ -459,7 +475,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    align-items: center;
+    align-items: stretch;
 }
 
 .contact-item {
@@ -728,6 +744,7 @@ body {
     padding: 2rem;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
+    text-align: center;
 }
 
 .course-card:hover {
@@ -735,36 +752,17 @@ body {
     transform: translateY(-5px);
 }
 
-.course-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    margin-bottom: 1rem;
-    gap: 1rem;
-}
-
-.course-header h3 {
+.course-card h3 {
     font-size: 1.25rem;
     font-weight: 600;
-}
-
-.semester {
-    font-family: var(--font-mono);
-    font-size: 0.8rem;
-    color: var(--color-accent);
-    white-space: nowrap;
-}
-
-.course-description {
-    color: var(--color-text-light);
     margin-bottom: 1.5rem;
-    line-height: 1.7;
+    color: var(--color-primary);
 }
 
 .course-meta {
     display: flex;
     gap: 1rem;
-    margin-bottom: 1.5rem;
+    justify-content: center;
 }
 
 .course-level,

@@ -58,6 +58,14 @@ filterButtons.forEach(button => {
     });
 });
 
+// Show journal articles by default on page load
+document.addEventListener('DOMContentLoaded', () => {
+    const journalBtn = document.querySelector('[data-filter="all"]');
+    if (journalBtn) {
+        journalBtn.click();
+    }
+});
+
 // Scroll Animation Observer
 const observerOptions = {
     threshold: 0.1,
