@@ -3,185 +3,475 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furkan Göz | Akademik Web Sitesi</title>
-    <style>
-        /* Genel Ayarlar */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fcfcfc;
-        }
-
-        /* Link Rengi (Akademik Mavi) */
-        a {
-            color: #0066cc;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        a:hover {
-            color: #004499;
-            text-decoration: underline;
-        }
-
-        /* Üst Bilgi (Header) - Daha Kompakt */
-        header {
-            text-align: center;
-            padding: 30px 0; /* Boşluk azaltıldı */
-            border-bottom: 1px solid #eaeaea;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 2.2rem; /* Font biraz dengelendi */
-            color: #2c3e50;
-        }
-
-        .title {
-            font-size: 1.1rem;
-            color: #7f8c8d;
-            font-weight: 300;
-            margin-top: 5px;
-        }
-
-        /* Menü */
-        nav {
-            text-align: center;
-            margin-top: 25px;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #2c3e50; /* Menü linkleri koyu gri */
-            font-weight: 600;
-            font-size: 1.05rem;
-        }
-
-        nav a:hover {
-            color: #0066cc; /* Üzerine gelince mavi */
-            text-decoration: none;
-        }
-
-        /* İçerik Bölümleri */
-        section {
-            padding: 25px 0;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            border-left: 5px solid #0066cc; /* Çizgi mavi yapıldı */
-            padding-left: 12px;
-            margin-bottom: 20px;
-            color: #2c3e50;
-        }
-
-        /* Randevu Kutusu Tasarımı */
-        .calendar-container {
-            margin-top: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            border-radius: 8px;
-            overflow: hidden;
-            background: #fff;
-        }
-
-        /* İletişim */
-        .contact-info p {
-            margin-bottom: 10px;
-        }
-
-        /* Alt Bilgi (Footer) */
-        footer {
-            text-align: center;
-            font-size: 0.9rem;
-            color: #aaa;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eaeaea;
-        }
-
-        /* Responsive */
-        @media (max-width: 600px) {
-            h1 { font-size: 1.8rem; }
-            nav a {
-                display: block;
-                margin: 10px 0;
-                border-bottom: 1px solid #f0f0f0;
-                padding-bottom: 5px;
-            }
-            nav a:last-child { border-bottom: none; }
-        }
-    </style>
+    <title>Dr. Furkan Göz - Akademik Profil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Furkan Göz</h1>
-        <div class="title">Dr. Öğr. Üyesi</div>
-        <div class="title">Kocaeli Üniversitesi Bilgisayar Mühendisliği</div>
-        
-        <nav>
-            <a href="#hakkimda">Hakkımda</a>
-            <a href="#yayinlar">Yayınlar</a>
-            <a href="#randevu">Randevu</a>
-            <a href="#iletisim">İletişim</a>
-        </nav>
-    </header>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <a href="#home" class="nav-logo">Dr. Furkan Göz</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">Hakkımda</a>
+                <a href="#research" class="nav-link">Araştırmalar</a>
+                <a href="#teaching" class="nav-link">Dersler</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#appointment" class="nav-link nav-link-primary">Randevu Al</a>
+            </div>
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
-<section id="hakkimda">
-        <h2>Hakkımda</h2>
-        <p>
-            Merhaba! Ben Furkan Göz. Kocaeli Üniversitesi Bilgisayar Mühendisliği bölümünde Dr. Öğretim Üyesi olarak görev yapıyorum. <br> 
-            Daha fazlası pek yakında...
-        </p>
-        <p>
-           
-          
-        </p>
-
-    </section>
-
-    <section id="yayinlar">
-        <h2>Yayınlar</h2>
-        <p>Yayınlarıma <a href="https://scholar.google.com/citations?hl=en&user=KUEPsmoAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a> profilim üzerinden ulaşabilirsiniz.</p>
-    </section>
-
-<section id="randevu">
-        <h2>Randevu Al</h2>
-        <p>
-            Öğrenci danışmanlığı, proje görüşmeleri veya akademik işbirliği için aşağıdaki takvimden uygun saati seçerek randevu oluşturabilirsiniz.
-        </p>
-        <p style="font-size: 0.95rem; color: #555; background-color: #f9f9f9; padding: 10px; border-left: 4px solid #0066cc; border-radius: 4px;">
-            <strong>Bilgi:</strong> Randevular en erken <strong>1 gün</strong>, en geç <strong>1 hafta</strong> sonrasına planlanabilmektedir.
-        </p>
-        <div class="calendar-container">
-            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2KrMnz6mwwTubFqBZMRJ-WlZIaJHsXgzU8cPz7KVLkdqjRvzJt_9B8_6aljDsEb0VcpNskiWX_?gv=true" 
-                    style="border: 0;" 
-                    width="100%" 
-                    height="600" 
-                    frameborder="0">
-            </iframe>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-label">Mühendislik Fakültesi</span>
+                <h1 class="hero-title">
+                    <span class="title-line">Yapay</span>
+                    <span class="title-line">Zeka</span>
+                </h1>
+                <p class="hero-description">
+                   Yapay Zeka alanı.
+                </p>
+                <div class="hero-actions">
+                    <a href="#research" class="btn btn-primary">Araştırmalarım</a>
+                    <a href="#appointment" class="btn btn-secondary">İletişime Geç</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-grid">
+                    <div class="grid-item" style="animation-delay: 0s;"></div>
+                    <div class="grid-item" style="animation-delay: 0.1s;"></div>
+                    <div class="grid-item" style="animation-delay: 0.2s;"></div>
+                    <div class="grid-item" style="animation-delay: 0.3s;"></div>
+                    <div class="grid-item" style="animation-delay: 0.4s;"></div>
+                    <div class="grid-item" style="animation-delay: 0.5s;"></div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="iletisim">
-        <h2>İletişim</h2>
-        <div class="contact-info">
-            <p><strong>E-posta:</strong> furkan.goz@kocaeli.edu.tr / furkangoz@gmail.com </a></p>
-             <p>
-                <a href="https://scholar.google.com/citations?hl=en&user=KUEPsmoAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a> &bull; 
-                <a href="https://www.linkedin.com/in/furkangoz/">LinkedIn</a> &bull; 
-		<a href="https://www.researchgate.net/profile/Furkan-Goez">Researchgate</a> &bull; 
-		<a href="https://avesis.kocaeli.edu.tr/furkan.goz">Avesis</a> &bull; 
-                <a href="https://www.instagram.com/furkangoz_">Instagram</a> 
-            </p>
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Hakkımda</span>
+                <h2 class="section-title">Akademik Profil</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-main">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <!-- Fotoğrafınızı buraya ekleyin -->
+                            <img src="images/profile.jpg" alt="Profil Fotoğrafı">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Dr. [Adınız Soyadınız]</h3>
+                            <p class="profile-title">[Unvanınız]</p>
+                            <p class="profile-dept">[Bölüm Adı]<br>[Üniversite Adı]</p>
+                            
+                            <div class="contact-info">
+                                <a href="mailto:email@university.edu" class="contact-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    email@university.edu
+                                </a>
+                                <a href="#" class="contact-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                    LinkedIn
+                                </a>
+                                <a href="#" class="contact-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bio">
+                        <p>
+                            [Kısa bir biyografi yazın. Akademik geçmişiniz, araştırma ilgi alanlarınız 
+                            ve güncel projeleriniz hakkında bilgi verin. Bu alan sizin hikayenizi anlatmalı.]
+                        </p>
+                        <p>
+                            Araştırmalarım [ana araştırma konusu] üzerine odaklanmaktadır. 
+                            [Önemli başarılarınız, projeleriniz veya iş birlikleri hakkında bilgi].
+                        </p>
+                    </div>
+
+                    <div class="expertise">
+                        <h3>Uzmanlık Alanları</h3>
+                        <div class="tags">
+                            <span class="tag">Makine Öğrenmesi</span>
+                            <span class="tag">Yapay Zeka</span>
+                            <span class="tag">Metin Madenciliği</span>
+                            <span class="tag">Büyük Dil Modelleri</span>
+                            <span class="tag">Görüntü İşleme</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-sidebar">
+                    <div class="info-card">
+                        <h4>Eğitim</h4>
+                        <div class="timeline-item">
+                            <span class="year">2020</span>
+                            <div class="timeline-content">
+                                <strong>Doktora</strong>
+                                <p>[Bölüm], [Üniversite]</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">2015</span>
+                            <div class="timeline-content">
+                                <strong>Yüksek Lisans</strong>
+                                <p>[Bölüm], [Üniversite]</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">2013</span>
+                            <div class="timeline-content">
+                                <strong>Lisans</strong>
+                                <p>[Bölüm], [Üniversite]</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Ödüller & Başarılar</h4>
+                        <ul class="achievements">
+                            <li>En İyi Makale Ödülü (2023)</li>
+                            <li>Genç Araştırmacı Ödülü (2022)</li>
+                            <li>TÜBİTAK Projesi (2021)</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>CV İndirin</h4>
+                        <a href="files/cv.pdf" class="btn btn-outline" download>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            CV'yi İndir
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        &copy; 2026 Furkan Göz.
+    <!-- Research Section -->
+    <section id="research" class="section research-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Araştırmalar</span>
+                <h2 class="section-title">Yayınlar & Projeler</h2>
+            </div>
+
+            <div class="research-filter">
+                <button class="filter-btn active" data-filter="all">Tümü</button>
+                <button class="filter-btn" data-filter="journal">Dergi Makaleleri</button>
+                <button class="filter-btn" data-filter="conference">Konferanslar</button>
+                <button class="filter-btn" data-filter="project">Projeler</button>
+            </div>
+
+            <div class="research-grid">
+                <article class="research-card" data-category="journal">
+                    <div class="research-meta">
+                        <span class="research-type">Dergi Makalesi</span>
+                        <span class="research-year">2024</span>
+                    </div>
+                    <h3 class="research-title">
+                        Makale Başlığınız: Alt Başlık veya Açıklama
+                    </h3>
+                    <p class="research-authors">
+                        <strong>Soyadınız, A.</strong>, Yazar, B., & Yazar, C.
+                    </p>
+                    <p class="research-journal">
+                        <em>Journal Name</em>, Vol. XX, No. X, pp. XXX-XXX
+                    </p>
+                    <div class="research-links">
+                        <a href="#" class="research-link">PDF</a>
+                        <a href="#" class="research-link">DOI</a>
+                        <a href="#" class="research-link">Kod</a>
+                    </div>
+                </article>
+
+                <article class="research-card" data-category="conference">
+                    <div class="research-meta">
+                        <span class="research-type">Konferans</span>
+                        <span class="research-year">2023</span>
+                    </div>
+                    <h3 class="research-title">
+                        Konferans Bildiri Başlığınız
+                    </h3>
+                    <p class="research-authors">
+                        <strong>Soyadınız, A.</strong> & Yazar, B.
+                    </p>
+                    <p class="research-journal">
+                        <em>Conference Name 2023</em>, Location
+                    </p>
+                    <div class="research-links">
+                        <a href="#" class="research-link">PDF</a>
+                        <a href="#" class="research-link">Sunum</a>
+                    </div>
+                </article>
+
+                <article class="research-card" data-category="project">
+                    <div class="research-meta">
+                        <span class="research-type">Proje</span>
+                        <span class="research-year">2023-2025</span>
+                    </div>
+                    <h3 class="research-title">
+                        Aktif Araştırma Projesi Adı
+                    </h3>
+                    <p class="research-authors">
+                        Proje Yöneticisi: <strong>Dr. Adınız Soyadınız</strong>
+                    </p>
+                    <p class="research-journal">
+                        TÜBİTAK / BAP / Endüstri Projesi
+                    </p>
+                    <div class="research-links">
+                        <a href="#" class="research-link">Detaylar</a>
+                    </div>
+                </article>
+
+                <!-- Daha fazla yayın ekleyebilirsiniz -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Section -->
+    <section id="teaching" class="section teaching-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Öğretim</span>
+                <h2 class="section-title">Dersler & Mentörlük</h2>
+            </div>
+
+            <div class="teaching-grid">
+                <div class="course-card">
+                    <div class="course-header">
+                        <h3>Ders Kodu: Ders Adı</h3>
+                        <span class="semester">Güz 2024</span>
+                    </div>
+                    <p class="course-description">
+                        Dersin kısa açıklaması. Bu derste öğrenciler [konular] hakkında 
+                        bilgi edinecek ve [beceriler] geliştireceklerdir.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-level">Lisans</span>
+                        <span class="course-credits">3 Kredi</span>
+                    </div>
+                    <a href="#" class="course-link">Ders Materyalleri →</a>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <h3>Ders Kodu: İleri Düzey Ders</h3>
+                        <span class="semester">Güz 2024</span>
+                    </div>
+                    <p class="course-description">
+                        Yüksek lisans düzeyinde bir ders. Öğrenciler [ileri konular] 
+                        üzerine çalışacak ve araştırma projeleri yürüteceklerdir.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-level">Yüksek Lisans</span>
+                        <span class="course-credits">3 Kredi</span>
+                    </div>
+                    <a href="#" class="course-link">Ders Materyalleri →</a>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <h3>Laboratuvar / Proje Dersi</h3>
+                        <span class="semester">Bahar 2024</span>
+                    </div>
+                    <p class="course-description">
+                        Uygulamalı bir ders. Öğrenciler gerçek dünya problemleri 
+                        üzerine çalışarak pratik deneyim kazanacaklardır.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-level">Lisans</span>
+                        <span class="course-credits">4 Kredi</span>
+                    </div>
+                    <a href="#" class="course-link">Ders Materyalleri →</a>
+                </div>
+            </div>
+
+            <div class="supervision">
+                <h3>Danışmanlık</h3>
+                <div class="supervision-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Doktora Öğrencisi</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Yüksek Lisans Öğrencisi</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Lisans Projesi</span>
+                    </div>
+                </div>
+                <p class="supervision-text">
+                    Yeni öğrenci arıyorum! [Araştırma alanları] konularında çalışmak 
+                    isteyen motivasyonu yüksek öğrencilerle tanışmak isterim.
+                </p>
+                <a href="#appointment" class="btn btn-primary">Görüşme Talebi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section blog-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Blog</span>
+                <h2 class="section-title">Düşünceler & Yazılar</h2>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-1.jpg" alt="Blog görseli">
+                        <span class="blog-category">Araştırma</span>
+                    </div>
+                    <div class="blog-content">
+                        <time class="blog-date">15 Ocak 2024</time>
+                        <h3 class="blog-title">Blog Yazısı Başlığınız</h3>
+                        <p class="blog-excerpt">
+                            Yazınızın kısa bir özeti. İlk birkaç cümle okuyucuyu 
+                            çekecek şekilde yazılmalıdır...
+                        </p>
+                        <a href="blog/post-1.html" class="blog-link">Devamını Oku →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-2.jpg" alt="Blog görseli">
+                        <span class="blog-category">Eğitim</span>
+                    </div>
+                    <div class="blog-content">
+                        <time class="blog-date">8 Ocak 2024</time>
+                        <h3 class="blog-title">İkinci Blog Yazınız</h3>
+                        <p class="blog-excerpt">
+                            Bir başka ilginç konu hakkında düşünceleriniz. 
+                            Akademik konularda görüşlerinizi paylaşın...
+                        </p>
+                        <a href="blog/post-2.html" class="blog-link">Devamını Oku →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-3.jpg" alt="Blog görseli">
+                        <span class="blog-category">Teknoloji</span>
+                    </div>
+                    <div class="blog-content">
+                        <time class="blog-date">1 Ocak 2024</time>
+                        <h3 class="blog-title">Üçüncü Blog Yazınız</h3>
+                        <p class="blog-excerpt">
+                            Teknolojideki yeni gelişmeler veya sizin alanınızdaki 
+                            trendler hakkında değerlendirmeler...
+                        </p>
+                        <a href="blog/post-3.html" class="blog-link">Devamını Oku →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="section appointment-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Randevu</span>
+                <h2 class="section-title">Görüşme Planlayın</h2>
+            </div>
+
+            <div class="appointment-intro">
+                <p>
+                    Araştırma iş birliği, öğrenci danışmanlığı veya diğer konular için 
+                    benimle görüşmek isterseniz, aşağıdaki takvimden uygun bir zaman 
+                    seçebilirsiniz.
+                </p>
+            </div>
+
+            <div class="calendar-container">
+                <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2KrMnz6mwwTubFqBZMRJ-WlZIaJHsXgzU8cPz7KVLkdqjRvzJt_9B8_6aljDsEb0VcpNskiWX_?gv=true" 
+                        style="border: 0;" 
+                        width="100%" 
+                        height="600" 
+                        frameborder="0">
+                </iframe>
+            </div>
+
+            <div class="alternative-contact">
+                <p>Veya direkt iletişime geçin:</p>
+                <a href="mailto:email@university.edu" class="btn btn-secondary">E-posta Gönderin</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Dr. [Adınız Soyadınız]</h4>
+                    <p>[Bölüm Adı]<br>
+                    [Üniversite Adı]<br>
+                    [Adres]</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Hızlı Bağlantılar</h4>
+                    <a href="#about">Hakkımda</a>
+                    <a href="#research">Araştırmalar</a>
+                    <a href="#teaching">Dersler</a>
+                    <a href="#blog">Blog</a>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Sosyal Medya</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="GitHub">GitHub</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="Google Scholar">Scholar</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dr. [Adınız Soyadınız]. Tüm hakları saklıdır.</p>
+                <p>Son güncelleme: <span id="last-update"></span></p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

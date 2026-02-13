@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Yazısı Başlığı - Dr. [Adınız Soyadınız]</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+        }
+        
+        .article-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .article-category {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+        }
+        
+        .article-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        .article-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            color: var(--color-text-light);
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+        
+        .article-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            margin-bottom: 3rem;
+        }
+        
+        .article-content {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: var(--color-text);
+        }
+        
+        .article-content h2 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 600;
+            margin: 3rem 0 1.5rem;
+            color: var(--color-primary);
+        }
+        
+        .article-content h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+        }
+        
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-content ul,
+        .article-content ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+        
+        .article-content li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .article-content blockquote {
+            border-left: 4px solid var(--color-accent);
+            padding-left: 2rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--color-text-light);
+        }
+        
+        .article-content code {
+            font-family: var(--font-mono);
+            background: var(--color-bg-alt);
+            padding: 0.2rem 0.5rem;
+            border-radius: var(--border-radius);
+            font-size: 0.9em;
+        }
+        
+        .article-content pre {
+            background: var(--color-bg-alt);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .article-content pre code {
+            background: none;
+            padding: 0;
+        }
+        
+        .article-footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--color-border);
+        }
+        
+        .article-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+        
+        .article-tag {
+            padding: 0.5rem 1rem;
+            background: var(--color-bg-alt);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+            font-size: 0.9rem;
+            text-decoration: none;
+            color: var(--color-text);
+            transition: var(--transition);
+        }
+        
+        .article-tag:hover {
+            border-color: var(--color-accent);
+            background: rgba(74, 144, 226, 0.05);
+        }
+        
+        .article-author {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem;
+            background: var(--color-bg-alt);
+            border-radius: var(--border-radius);
+        }
+        
+        .author-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .author-info p {
+            color: var(--color-text-light);
+            margin: 0;
+        }
+        
+        .back-to-blog {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            color: var(--color-accent);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .back-to-blog:hover {
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (same as main page) -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-logo">Dr. [Adınız Soyadınız]</a>
+            <div class="nav-links">
+                <a href="../index.html#about" class="nav-link">Hakkımda</a>
+                <a href="../index.html#research" class="nav-link">Araştırmalar</a>
+                <a href="../index.html#teaching" class="nav-link">Dersler</a>
+                <a href="../index.html#blog" class="nav-link">Blog</a>
+                <a href="../index.html#appointment" class="nav-link nav-link-primary">Randevu Al</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article -->
+    <article class="article-container">
+        <a href="../index.html#blog" class="back-to-blog">
+            ← Blog'a Dön
+        </a>
+        
+        <header class="article-header">
+            <span class="article-category">Araştırma</span>
+            <h1 class="article-title">Blog Yazınızın Başlığı: Dikkat Çekici ve Açıklayıcı</h1>
+            
+            <div class="article-meta">
+                <div class="article-meta-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    15 Ocak 2024
+                </div>
+                <div class="article-meta-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                        <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    8 dakika okuma
+                </div>
+            </div>
+        </header>
+
+        <img src="../images/blog-1.jpg" alt="Blog görseli" class="article-image">
+
+        <div class="article-content">
+            <p>
+                <strong>Giriş paragrafı:</strong> Blog yazınızın ilk paragrafı okuyucunun ilgisini çekmeli ve 
+                konunun neden önemli olduğunu açıklamalıdır. Araştırmanız, deneyimleriniz veya düşünceleriniz 
+                hakkında ilgi çekici bir açılış yapın.
+            </p>
+
+            <p>
+                İkinci paragrafta konuya daha derin girebilirsiniz. Akademik bir bakış açısıyla ancak 
+                anlaşılır bir dille yazın. Teknik terimleri gerektiğinde açıklayın.
+            </p>
+
+            <h2>Ana Bölüm 1: Konunun Temelleri</h2>
+
+            <p>
+                Bu bölümde konunuzun temel kavramlarını açıklayın. Örneğin, makine öğrenmesi hakkında 
+                yazıyorsanız, temel algoritmaları veya yaklaşımları açıklayabilirsiniz.
+            </p>
+
+            <blockquote>
+                "Önemli bir alıntı veya dikkat çekici bir ifade buraya gelebilir. Bu, okuyucunun 
+                dikkatini çekmek ve önemli noktaları vurgulamak için kullanılır."
+            </blockquote>
+
+            <p>
+                Listeleri kullanarak bilgiyi düzenleyebilirsiniz:
+            </p>
+
+            <ul>
+                <li>İlk önemli nokta veya kavram</li>
+                <li>İkinci önemli nokta - daha detaylı açıklama ile</li>
+                <li>Üçüncü nokta ve pratik uygulamaları</li>
+                <li>Dördüncü nokta ve gelecek perspektifi</li>
+            </ul>
+
+            <h2>Ana Bölüm 2: Pratik Uygulamalar</h2>
+
+            <p>
+                Bu bölümde teorik bilgiyi pratiğe dökün. Gerçek dünya örnekleri verin. Kendi 
+                araştırmalarınızdan veya projelerinizden örnekler paylaşabilirsiniz.
+            </p>
+
+            <p>
+                Kod örneği paylaşmak isterseniz:
+            </p>
+
+            <pre><code>def ornek_fonksiyon():
+    """
+    Basit bir Python fonksiyonu örneği
+    """
+    print("Merhaba Dünya!")
+    return True</code></pre>
+
+            <h3>Alt Başlık: Spesifik Bir Konu</h3>
+
+            <p>
+                Daha spesifik konulara inmek için alt başlıklar kullanın. Bu, okuyucunun 
+                içeriği daha kolay taramasına yardımcı olur.
+            </p>
+
+            <ol>
+                <li><strong>Birinci adım:</strong> İlk yapılması gerekenler</li>
+                <li><strong>İkinci adım:</strong> Sonraki aşama ve dikkat edilmesi gerekenler</li>
+                <li><strong>Üçüncü adım:</strong> Son düzenlemeler ve kontroller</li>
+            </ol>
+
+            <h2>Ana Bölüm 3: Gelecek Perspektifi</h2>
+
+            <p>
+                Bu alanda gelecekte neler olabileceğini tartışın. Kendi görüşlerinizi paylaşın 
+                ancak spekülatif ifadeleri açıkça belirtin.
+            </p>
+
+            <p>
+                Araştırmanızın veya alanınızın geleceği hakkında tahminlerinizi paylaşabilirsiniz. 
+                Hangi zorluklar var? Hangi fırsatlar ortaya çıkıyor?
+            </p>
+
+            <h2>Sonuç</h2>
+
+            <p>
+                Sonuç bölümünde ana noktaları özetleyin. Okuyucuya ana mesajınızı hatırlatın. 
+                Gelecek araştırmalar veya okumalar için önerilerde bulunabilirsiniz.
+            </p>
+
+            <p>
+                Son olarak, okuyucuları düşünceleri hakkında yorum yapmaya veya sizinle iletişime 
+                geçmeye teşvik edin.
+            </p>
+        </div>
+
+        <footer class="article-footer">
+            <div class="article-tags">
+                <a href="#" class="article-tag">Makine Öğrenmesi</a>
+                <a href="#" class="article-tag">Yapay Zeka</a>
+                <a href="#" class="article-tag">Araştırma</a>
+                <a href="#" class="article-tag">Teknoloji</a>
+            </div>
+
+            <div class="article-author">
+                <img src="../images/profile.jpg" alt="Yazar" class="author-image">
+                <div class="author-info">
+                    <h4>Dr. [Adınız Soyadınız]</h4>
+                    <p>[Unvanınız], [Bölüm] - [Üniversite]</p>
+                </div>
+            </div>
+        </footer>
+    </article>
+
+    <!-- Footer (same as main page) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Dr. [Adınız Soyadınız]</h4>
+                    <p>[Bölüm Adı]<br>
+                    [Üniversite Adı]</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Hızlı Bağlantılar</h4>
+                    <a href="../index.html#about">Hakkımda</a>
+                    <a href="../index.html#research">Araştırmalar</a>
+                    <a href="../index.html#teaching">Dersler</a>
+                    <a href="../index.html#blog">Blog</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dr. [Adınız Soyadınız]. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
