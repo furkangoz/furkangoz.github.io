@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Furkan Göz - Akademik Profil</title>
-    <meta name="description" content="Dr. Furkan Göz - Doğal Dil İşleme ve Metin Madenciliği Araştırmacısı">
+    <title>Dr. Furkan Göz</title>
+    <meta name="description" content="Dr. Furkan Göz - Yapay Zeka Araştırmacısı">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +14,12 @@
     <!-- Navigation -->
     <nav class="nav-container">
         <div class="nav-content">
-            <a href="#home" class="nav-logo">Dr. Furkan Göz</a>
+            <a href="#about" class="nav-logo">Dr. Furkan Göz</a>
             <div class="nav-links">
                 <a href="#about" class="nav-link">Hakkımda</a>
                 <a href="#research" class="nav-link">Yayınlar</a>
                 <a href="#teaching" class="nav-link">Dersler</a>
-                <a href="#appointment" class="nav-link nav-link-primary">Randevu Al</a>
+                <a href="#appointment" class="nav-link nav-link-primary">Randevu</a>
                 <a href="index_en.html" class="nav-link nav-link-lang">EN</a>
             </div>
             <button class="mobile-toggle" aria-label="Menu">
@@ -30,115 +30,75 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content-single">
-            <div class="hero-text">
-                <span class="hero-label">Bilgisayar Mühendisliği</span>
-                <h1 class="hero-title">
-                    <span class="title-line">Doğal Dil İşleme ve</span>
-                    <span class="title-line">Metin Madenciliği</span>
-                </h1>
-                <p class="hero-description">
-                    Kocaeli Üniversitesi Bilgisayar Mühendisliği Bölümü öğretim üyesi.
-                </p>
-                <div class="hero-actions">
-                    <a href="#research" class="btn btn-primary">Yayınlar</a>
-                    <a href="#appointment" class="btn btn-secondary">İletişim</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- About Section -->
-    <section id="about" class="section about-section">
+    <section id="about" class="section about-section" style="padding-top: 8rem;">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">Hakkımda</span>
-                <h2 class="section-title">Akademik Profil</h2>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-main">
-                    <div class="profile-card">
-                        <div class="profile-image">
-                            <img src="images/profile.jpg" alt="Dr. Furkan Göz">
-                        </div>
-                        <div class="profile-info">
-                            <h3>Dr. Öğr. Üyesi Furkan Göz</h3>
-                            <p class="profile-title">Öğretim Üyesi</p>
-                            <p class="profile-dept">Bilgisayar Mühendisliği Bölümü<br>Kocaeli Üniversitesi</p>
-                            
-                            <div class="contact-info">
-                                <a href="mailto:furkan.goz@kocaeli.edu.tr" class="contact-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                        <polyline points="22,6 12,13 2,6"></polyline>
-                                    </svg>
-                                    furkan.goz@kocaeli.edu.tr
-                                </a>
-                                <a href="https://avesis.kocaeli.edu.tr/furkan.goz" target="_blank" class="contact-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="2" y1="12" x2="22" y2="12"></line>
-                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                                    </svg>
-                                    Avesis Profil
-                                </a>
-                                <a href="https://scholar.google.com/citations?hl=tr&user=KUEPsmoAAAAJ" target="_blank" class="contact-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                                    </svg>
-                                    Google Scholar
-                                </a>
-                                <a href="https://orcid.org/0000-0002-6726-3679" target="_blank" class="contact-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <circle cx="12" cy="10" r="3"></circle>
-                                        <path d="M6.168 18.849A4 4 0 0 1 10 16h4a4 4 0 0 1 3.834 2.855"></path>
-                                    </svg>
-                                    ORCID
-                                </a>
-                                <a href="https://www.instagram.com/furkangoz_" target="_blank" class="contact-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                    </svg>
-                                    Instagram
-                                </a>
-                            </div>
-                        </div>
+            <div class="about-content-centered">
+                <div class="profile-card-centered">
+                    <div class="profile-image-large">
+                        <img src="images/profile.jpg" alt="Dr. Furkan Göz">
+                    </div>
+                    
+                    <h1>Dr. Öğr. Üyesi Furkan Göz</h1>
+                    <p class="profile-title">Bilgisayar Mühendisliği Bölümü, Kocaeli Üniversitesi</p>
+                    
+                    <div class="bio-centered">
+                        <p>2024 yılından itibaren Kocaeli Üniversitesi Bilgisayar Mühendisliği Bölümü'nde öğretim üyesi olarak görev yapmaktadır.</p>
+                        <p>Araştırma konuları: büyük dil modelleri, metin madenciliği ve görüntü işleme.</p>
                     </div>
 
-                    <div class="bio">
-                        <p>
-                            2024 yılından itibaren Kocaeli Üniversitesi Bilgisayar Mühendisliği Bölümü'nde 
-                            öğretim üyesi olarak görev yapmaktadır.
-                        </p>
-                        <p>
-                            Araştırma konuları: büyük dil modelleri, metin madenciliği ve görüntü işleme.
-                        </p>
+                    <div class="tags-centered">
+                        <span class="tag">Yapay Zeka</span>
+                        <span class="tag">Büyük Dil Modelleri</span>
+                        <span class="tag">Doğal Dil İşleme</span>
+                        <span class="tag">Metin Madenciliği</span>
+                        <span class="tag">Görüntü İşleme</span>
+                        <span class="tag">Nesne Tanıma</span>
+                    </div>
+                    
+                    <div class="contact-grid">
+                        <a href="mailto:furkan.goz@kocaeli.edu.tr" class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            E-posta
+                        </a>
+                        <a href="https://avesis.kocaeli.edu.tr/furkan.goz" target="_blank" class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                            Avesis
+                        </a>
+                        <a href="https://scholar.google.com/citations?hl=tr&user=KUEPsmoAAAAJ" target="_blank" class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            Scholar
+                        </a>
+                        <a href="https://orcid.org/0000-0002-6726-3679" target="_blank" class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="10" r="3"></circle>
+                                <path d="M6.168 18.849A4 4 0 0 1 10 16h4a4 4 0 0 1 3.834 2.855"></path>
+                            </svg>
+                            ORCID
+                        </a>
+                        <a href="https://www.instagram.com/furkangoz_" target="_blank" class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            Instagram
+                        </a>
                     </div>
 
-                    <div class="expertise">
-                        <h3>Araştırma Alanları</h3>
-                        <div class="tags">
-                            <span class="tag">Yapay Zeka</span>
-                            <span class="tag">Büyük Dil Modelleri</span>
-                            <span class="tag">Doğal Dil İşleme</span>
-                            <span class="tag">Metin Madenciliği</span>
-                            <span class="tag">Görüntü İşleme</span>
-                            <span class="tag">Nesne Tanıma</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="about-sidebar">
-                    <div class="info-card">
-                        <h4>CV İndirin</h4>
-                        <a href="files/cv.pdf" class="btn btn-outline" download>
+                    <div class="cv-download">
+                        <a href="files/cv.pdf" class="btn btn-primary" download>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                                 <polyline points="7 10 12 15 17 10"></polyline>
@@ -156,8 +116,10 @@
     <section id="research" class="section research-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Yayınlar</span>
                 <h2 class="section-title">Akademik Çalışmalar</h2>
+                <a href="https://scholar.google.com/citations?hl=tr&user=KUEPsmoAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="scholar-link">
+                    Tüm yayınlar için Google Scholar →
+                </a>
             </div>
 
             <div class="research-grid">
@@ -280,58 +242,38 @@
     <section id="teaching" class="section teaching-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Öğretim</span>
                 <h2 class="section-title">Dersler</h2>
             </div>
 
             <div class="teaching-grid">
                 <div class="course-card">
                     <h3>Metin Madenciliği</h3>
-                    <div class="course-meta">
-                        <span class="course-level">Doktora</span>
-                    </div>
+                    <span class="course-level">Doktora</span>
                 </div>
 
                 <div class="course-card">
                     <h3>Doğal Dil İşleme ve Metin Madenciliğine Giriş</h3>
-                    <div class="course-meta">
-                        <span class="course-level">Lisans</span>
-                    </div>
+                    <span class="course-level">Lisans</span>
                 </div>
 
                 <div class="course-card">
                     <h3>Büyük Veri Analizine Giriş</h3>
-                    <div class="course-meta">
-                        <span class="course-level">Lisans</span>
-                    </div>
+                    <span class="course-level">Lisans</span>
                 </div>
 
                 <div class="course-card">
                     <h3>Mikroişlemci Sistemleri</h3>
-                    <div class="course-meta">
-                        <span class="course-level">Lisans</span>
-                    </div>
-                </div>
-
-                <div class="course-card">
-                    <h3>Yazılım Laboratuvarı</h3>
-                    <div class="course-meta">
-                        <span class="course-level">Lisans</span>
-                    </div>
+                    <span class="course-level">Lisans</span>
                 </div>
 
                 <div class="course-card">
                     <h3>Bilgisayar Organizasyonu ve Mimarisi</h3>
-                    <div class="course-meta">
-                        <span class="course-level">Lisans</span>
-                    </div>
+                    <span class="course-level">Lisans</span>
                 </div>
 
                 <div class="course-card">
                     <h3>Bilgisayar Bilimlerinde Yeni Teknolojiler</h3>
-                    <div class="course-meta">
-                        <span class="course-level">Lisans</span>
-                    </div>
+                    <span class="course-level">Lisans</span>
                 </div>
             </div>
         </div>
@@ -341,8 +283,7 @@
     <section id="appointment" class="section appointment-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Randevu</span>
-                <h2 class="section-title">Görüşme Planlayın</h2>
+                <h2 class="section-title">Randevu</h2>
             </div>
 
             <div class="appointment-intro">
@@ -373,11 +314,11 @@
                     <p>Bilgisayar Mühendisliği Bölümü<br>
                     Mühendislik Fakültesi<br>
                     Kocaeli Üniversitesi<br>
-                    Gebze, Kocaeli</p>
+                    İzmit, Kocaeli</p>
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Hızlı Bağlantılar</h4>
+                    <h4>Bağlantılar</h4>
                     <a href="#about">Hakkımda</a>
                     <a href="#research">Yayınlar</a>
                     <a href="#teaching">Dersler</a>
@@ -396,8 +337,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Dr. Furkan Göz. Tüm hakları saklıdır.</p>
-                <p>Son güncelleme: <span id="last-update"></span></p>
+                <p>&copy; 2025 Dr. Furkan Göz</p>
             </div>
         </div>
     </footer>
