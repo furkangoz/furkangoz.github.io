@@ -213,6 +213,14 @@ body {
     z-index: 1;
 }
 
+.hero-content-single {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
 .hero-label {
     display: inline-block;
     font-family: var(--font-mono);
